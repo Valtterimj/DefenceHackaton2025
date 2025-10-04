@@ -1,0 +1,22 @@
+"""A python wrapper around the HyP3 API"""
+
+from importlib.metadata import version
+
+from . import util
+from .hyp3 import PLUS_API, PLUS_TEST_API, PROD_API, TEST_API, HyP3
+from .jobs import Batch, Job
+
+
+__version__ = version(__name__)
+
+__all__ = [
+    '__version__',
+    'Batch',
+    'HyP3',
+    'Job',
+    'PROD_API',
+    'TEST_API',
+    'PLUS_API',
+    'PLUS_TEST_API',
+    'util',
+]
